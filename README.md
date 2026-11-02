@@ -59,7 +59,7 @@ This skill stands alone; the recovery skill is not a dependency.
 
 ## Status
 
-v1 procedure. Not yet behavior-tested across agent runtimes. Publishing or cloning this repository does not activate it in an agent runtime.
+v2 procedure. Behavior-tested once, on the previous revision, with three subjects run with and without the skill: see [docs/behavior-test-2026-11-02.md](./docs/behavior-test-2026-11-02.md). The current revision's "learn each source as a subject in its own right" step is untested. Publishing or cloning this repository does not activate it in an agent runtime.
 
 ## License
 
