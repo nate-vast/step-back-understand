@@ -5,12 +5,12 @@ description: "Explain a person, work, idea, product or system through what shape
 
 # Step Back Understand
 
-To understand a thing, study the things that made it what it is. Run the five steps below, then report in the required output format.
+To understand a thing, study the things that made it what it is. Run the five steps below, then report what you found.
 
 ## 1. Anchor the subject
 
 - **Do:** name the subject (person, work, idea, product, system) and the aspect the user wants to understand. Inspect the subject itself, or one representative work, before tracing backward.
-- **Do:** if the aspect is unclear, ask one question before researching. Do not invent the question for the user.
+- **Do:** if a useful starting scope is apparent, state it and begin. Ask a question first only when the ambiguity would materially change the inquiry. Never silently substitute a different goal for the user's.
 - **Avoid:** a generic request to learn an entire field.
 - **Done when:** you have a concrete subject and one open question about it.
 
@@ -19,7 +19,7 @@ To understand a thing, study the things that made it what it is. Run the five st
 - **Do:** list candidate influences: teachers, earlier works, disciplines, components, dependencies, collaborators, experiences, constraints. For each, write what it might explain about the subject.
 - **Do:** treat names the user supplies as leads, not as proof of influence.
 - **Avoid:** picking connections for fame or proximity. Pick them for explanatory value.
-- **Done when:** you have a short map of subject, shaping source, what that source may explain. Three to six sources is a normal size.
+- **Done when:** you have a short map of subject, shaping source, what that source may explain.
 
 ## 3. Study the sources, not their names
 
@@ -30,15 +30,15 @@ To understand a thing, study the things that made it what it is. Run the five st
   - `composition`: the source is an observable part or dependency of the subject (a sample, a library, a cited paper, a shared collaborator on the record).
   - `interpretive`: a comparison you or a critic draws; similarity alone, not proof.
   - `unknown`: plausible but no evidence found.
-- **Do:** cite a source for each connection: URL, title, or document and date. Do not cite from memory without checking.
+- **Do:** cite a source for each connection: URL, title, or document and date. Check that the source supports the exact claim you attach it to, not just the general topic. Do not cite from memory without checking.
 - **Avoid:** a biography summary or an influence list standing in for the study.
-- **Done when:** each connection has the specific thing carried forward, an evidence class, and a source.
+- **Done when:** each connection has the specific thing carried forward, an evidence class, and a source that supports it.
 
-## 4. Go deeper only where it helps
+## 4. Go deeper where it improves understanding
 
-- **Default depth:** one layer back. Go a second layer only for one or two sources that remain opaque and matter to the open question.
-- **Do:** keep the original subject visible while exploring. Deeper understanding can be the deliverable even without an immediate practical payoff.
-- **Stop when:** you can explain the meaningful connections, or when evidence or scope runs out. In that case state the unanswered branches explicitly and stop. Do not keep researching to fill them.
+- **Do:** follow a branch while it materially improves understanding of the subject. If a shaping source remains opaque, repeat the inquiry for what shaped that source. There is no fixed generation count.
+- **Do:** keep the original subject visible while exploring, and respect the scope the user set. Deeper understanding can be the deliverable even without an immediate practical payoff.
+- **Stop when:** the explanation is sufficient for the open question, or evidence or scope limits are reached. Disclose the unresolved branches instead of researching to fill them.
 
 ## 5. Return to the subject
 
@@ -46,7 +46,19 @@ To understand a thing, study the things that made it what it is. Run the five st
 - **Do:** if there is a current task, say what this understanding changes about it. If the purpose is learning, say what the user can now recognize.
 - **Avoid:** reducing a person or work to a sum of influences.
 
-## Required output
+## Report
+
+Whatever the form, the report must cover:
+
+- the subject and the open question;
+- what you inspected directly, and what you could not;
+- the concrete shaping connections, each with what carried forward, its evidence class, and a source;
+- what those connections reveal about the subject;
+- what remains distinctive about the subject;
+- unresolved branches and consequential uncertainty;
+- what changes for the current task, if there is one.
+
+Choose the form that explains the subject best: a short narrative, a table, a diagram, or the template below. The template is a default, not a requirement.
 
 ```md
 STEP-BACK UNDERSTANDING
@@ -55,7 +67,7 @@ Subject and question:
 - ...
 
 Inspected directly:
-- what you examined of the subject itself, and what you could not
+- ...
 
 Connections:
 | Shaping source | What carried forward | Evidence | Source |
@@ -68,7 +80,7 @@ What this reveals about the subject:
 What remains distinctive:
 - ...
 
-Unanswered branches:
+Unresolved branches:
 - ...
 
 What changes for the current task (if any):
@@ -92,6 +104,8 @@ Use this skill for understanding, including when nothing has failed. Use `step-b
 
 ## Example (abbreviated)
 
+Sources checked 2026-11-02. Each row's source was read and supports the wording of that row.
+
 ```md
 STEP-BACK UNDERSTANDING
 
@@ -99,21 +113,22 @@ Subject and question:
 - SQLite: why is it a single-file, serverless database when its contemporaries were client-server?
 
 Inspected directly:
-- SQLite's own "About" and "Appropriate Uses" pages, the file-format spec, the 2000-era release notes.
+- sqlite.org "About SQLite" (https://www.sqlite.org/about.html): "serverless", "does not have a separate server process", "contained in a single disk file", "stable, enduring file format".
+- Not inspected: the early 2000 source tree.
 
 Connections:
 | Shaping source | What carried forward | Evidence | Source |
 | --- | --- | --- | --- |
-| Hipp's work on a US Navy guided-missile destroyer program | need for a DB that runs with no admin when the server is down | documented | Hipp interviews (Changelog #201, 2016) |
-| Tcl's extension model | SQLite began as a Tcl extension; its C API mirrors Tcl's simplicity | documented | sqlite.org "Tcl interface" history |
-| PostgreSQL's SQL syntax | the grammar SQLite copied as its dialect | documented | sqlite.org "SQL As Understood By SQLite" |
+| Hipp's contract work for Bath Iron Works on software for the DDG-79 Oscar Austin | the question "why do we even need a server?", and the aim of having no dependencies that can fail | documented | Corecursive #066 transcript, https://corecursive.com/066-sqlite-with-richard-hipp/ |
+| Tcl | SQLite "began as a Tcl extension"; the test suite is still Tcl | documented | https://www.sqlite.org/tclsqlite.html; Changelog #201, https://changelog.com/podcast/201 |
+| PostgreSQL | used as the reference for how SQL should behave | documented, thin: Hipp answers "Yes" to the interviewer's framing, no first-person elaboration | Changelog #201, https://changelog.com/podcast/201 |
 
 What this reveals about the subject:
-- The serverless design is a response to a deployment constraint, not a performance idea.
+- The serverless design answers a deployment constraint (software on a ship with no admin), not a performance idea.
 
 What remains distinctive:
-- Treating the database as a file format, with a public, stable on-disk spec.
+- Treating the database as a file format with a public, stable on-disk spec, now a US Library of Congress recommended storage format.
 
-Unanswered branches:
-- Which pre-2000 embedded databases (Berkeley DB, gdbm) Hipp looked at; not found in primary sources.
+Unresolved branches:
+- Which earlier embedded databases (Berkeley DB, gdbm) Hipp looked at; nothing found in the sources above.
 ```

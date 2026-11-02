@@ -12,7 +12,7 @@ An agent skill for understanding a person, work, idea, product, or system throug
 4. Trace further back only where it improves understanding.
 5. Return to the original subject and explain what the connections reveal.
 
-Depth is flexible: one layer back by default, a second only for sources that stay opaque. Deeper understanding can be the result; it does not have to justify an immediate action. Connections require evidence: resemblance alone does not prove influence, and every connection in the output is labelled `documented`, `composition`, `interpretive` or `unknown`, with a source.
+Depth is flexible: follow a branch while it materially improves understanding, keep the original subject visible, and stop when the explanation is sufficient or evidence runs out. Deeper understanding can be the result; it does not have to justify an immediate action. Connections require evidence: resemblance alone does not prove influence, and every connection in the output is labelled `documented`, `composition`, `interpretive` or `unknown`, with a source.
 
 ## Install
 
@@ -48,7 +48,7 @@ Use step-back-understand on SQLite. Why is it a single-file, serverless
 database when its contemporaries were client-server?
 ```
 
-The skill returns a fixed block: the subject and question, what was inspected directly, a table of connections (shaping source, what carried forward, evidence class, source), what the connections reveal, what remains distinctive, unanswered branches, and what changes for the current task. An abbreviated example is at the end of [`SKILL.md`](./step-back-understand/SKILL.md).
+The report covers the subject and question, what was inspected directly, the connections (shaping source, what carried forward, evidence class, source), what they reveal, what remains distinctive, unresolved branches, and what changes for the current task. A template block is provided, but a narrative or diagram is fine when it explains the subject better. An abbreviated example is at the end of [`SKILL.md`](./step-back-understand/SKILL.md).
 
 ## Which step back?
 
