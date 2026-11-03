@@ -48,7 +48,7 @@ Use step-back-understand on John Mayer's guitar playing. Where do the
 bends and the chord-melody rhythm style come from, and what is his own?
 ```
 
-The result leads with an explanation that teaches the shaping sources and shows what they reveal about the subject, with evidence and uncertainty woven in where they matter. It covers the question, what was inspected, what each source is like in its own right, the connections with their evidence, what they reveal, what remains distinctive, what you can now recognize, and what is unresolved. A table or template is used only when it makes the explanation clearer. Two abbreviated examples, one in prose and one in the template, are at the end of [`SKILL.md`](./step-back-understand/SKILL.md).
+The result leads with an explanation that teaches the most revealing sources and what they show about the subject, each connection taught once, with inference qualified in the prose and not only in a table. Supporting detail follows: what was inspected, every connection with its evidence class and source, and what is unresolved. Research depth and presented length are separate; the explanation stays selective however deep the investigation went. Two abbreviated examples, one in prose and one in the template, are at the end of [`SKILL.md`](./step-back-understand/SKILL.md).
 
 ## Which step back?
 
@@ -59,7 +59,7 @@ This skill stands alone; the recovery skill is not a dependency.
 
 ## Status
 
-v2 procedure. Behavior-tested twice on 2026-11-02 with three subjects (a musician, a product, an idea), each run with and without the skill: [first test](./docs/behavior-test-2026-11-02.md) on the earlier revision, [second test](./docs/behavior-test-2026-11-02-v3.md) on the current "learn each source in its own right" procedure. In the second test all three skill runs studied the sources from their own material and went a layer further back where it helped. Nine blind graders preferred the skill answer 8 times out of 9, scoring it about 27% higher on teaching the sources, revealing the subject, distinctiveness and support, and about 35% lower on readability. Cost: roughly a third to a half more tokens and time than answering without the skill, almost all of it fetching source material. One run per cell, one reader; initial evidence, not a guarantee. Publishing or cloning this repository does not activate it in an agent runtime.
+v2 procedure. Behavior-tested twice on 2026-11-02 with three subjects (a musician, a product, an idea), each run with and without the skill: [first test](./docs/behavior-test-2026-11-02.md) on the earlier revision, [second test](./docs/behavior-test-2026-11-02-v3.md) on the current "learn each source in its own right" procedure. In the second test all three skill runs studied the sources from their own material and went a layer further back where it helped. Nine model graders, three per pair, blind to which answer used the skill, preferred the skill answer 8 times out of 9 on those three pairs; their subjective scores ran about a quarter higher on teaching the sources, revealing the subject, distinctiveness and support, and about a third lower on readability. That is a difference in model-grader scores on three answer pairs, not a measured improvement in human understanding. Cost: roughly a third to a half more tokens and time than answering without the skill, almost all of it fetching source material. One run per cell, one reader; initial evidence, not a guarantee. Publishing or cloning this repository does not activate it in an agent runtime.
 
 ## License
 

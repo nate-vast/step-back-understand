@@ -65,11 +65,16 @@ This step is the heart of the skill. A name on a list teaches nothing.
 - **Do:** if there is a current task, say what this understanding changes about it.
 - **Avoid:** reducing a person or work to a sum of influences.
 
-## Report
+## Delivery
 
-Lead with a coherent explanation that teaches the shaping sources and shows what they reveal about the subject. Integrate evidence and uncertainty where they matter, in the sentence that makes the claim. Use a table or the template below only when it makes the explanation clearer; do not fill out a form.
+How deeply you investigate and how much you present are separate decisions. Investigate as deeply as the question needs. Present selectively.
 
-Whatever the form, the report must cover:
+- **Lead with the explanation.** The first section is a coherent account of what the most revealing sources teach about the subject. A reader who stops there should have the understanding. No table before it.
+- **Teach each important connection once.** Do not repeat the same material as a source profile, then a table row, then a synthesis paragraph, then a recognition bullet. Pick the one place where it teaches best and refer back to it elsewhere.
+- **Supporting detail comes after.** What was inspected and what was not, the full set of connections with evidence class and source, secondary connections, and unresolved branches go after the explanation, under a clear heading, or in a separate supporting file when the runtime allows. They must exist; they are not the lead.
+- **Length follows the subject and the user's requested depth.** A short opening paragraph on top of a repetitive dossier does not satisfy this. If the investigation produced twenty connections, the explanation still teaches the five that matter and the rest go in the supporting detail.
+
+The report must cover, somewhere:
 
 - the subject and the open question;
 - what you inspected directly, and what you could not;
@@ -81,35 +86,25 @@ Whatever the form, the report must cover:
 - unresolved branches and consequential uncertainty;
 - what changes for the current task, if there is one.
 
-Apply the same evidence standard to the concluding prose as to the connections. A summary sentence may not claim more than the evidence above it showed. If a conclusion is interpretation, say so and give its basis; labelling a claim interpretive does not supply the basis.
+## Uncertainty survives synthesis
 
-Template, for when a structured form helps:
+A conclusion may not be more certain than the evidence it summarizes. If a connection is labelled interpretive, thin or unknown in the supporting detail, then the opening, the synthesis and the takeaway carry the same qualification in words ("the comparison suggests", "no statement from the maker names this", "on one author's analysis"), not only in a table cell. A broad documented influence ("modeled after Cargo") does not establish a specific design lineage ("the lockfile is Cargo's lockfile") or a causal claim ("that is what forced the resolver work"); say which of those you actually have. Before finishing, reread every summary sentence and check it against the evidence class of the connection it rests on. The comparison can still illuminate without asserting proven ancestry.
+
+Template for the supporting detail, for when a structured form helps:
 
 ```md
-STEP-BACK UNDERSTANDING
-
-Subject and question:
-- ...
+## Supporting detail
 
 Inspected directly:
 - ...
 
-Sources studied (what each is like in its own right):
+Sources studied (what each is like in its own right, if not already covered above):
 - ...
 
 Connections:
 | Shaping source | Trait carried forward, and how it changed | Evidence | Source |
 | --- | --- | --- | --- |
 | ... | ... | documented / composition / interpretive / unknown | ... |
-
-What this reveals about the subject:
-- ...
-
-What remains distinctive:
-- ...
-
-What you can now recognize:
-- ...
 
 Unresolved branches:
 - ...
@@ -125,7 +120,9 @@ A useful result leaves the user able to recognize something in the subject they 
 - a famous-name list with no study of the sources;
 - a generic first-principles essay;
 - a family tree where connections lack an evidence class or source;
-- a chain that never returns to the subject.
+- a chain that never returns to the subject;
+- a dossier that teaches the same connection three or four times in different sections;
+- a summary sentence that is more certain than the evidence it rests on.
 
 ## Which step back
 
@@ -153,7 +150,7 @@ Sources checked 2026-11-02. No audio was inspected; every claim about how someon
 
 **Unresolved.** The Rock Hall "twice" quote. King's actual tuning. Anything about Mayer's chord-melody rhythm playing and Hendrix: critics compare them, no first-person statement was found, and the comparison stays an open question rather than a conclusion.
 
-## Example 2: a product (abbreviated, in the template)
+## Example 2: a product (abbreviated, supporting-detail style)
 
 Sources checked 2026-11-02.
 
@@ -178,13 +175,13 @@ Connections:
 | PostgreSQL | used as the reference for how SQL should behave | documented, thin: Hipp answers "Yes" to the interviewer's framing, no first-person elaboration | Changelog #201, https://changelog.com/podcast/201 |
 
 What this reveals about the subject:
-- The serverless design answers a deployment constraint (software on a ship with no admin), not a performance idea.
+- By Hipp's own account, the serverless design answered a deployment constraint (software on a ship with no admin); the sources read here do not frame it as a performance idea.
 
 What remains distinctive:
 - Treating the database as a file format with a public, stable on-disk spec, now a US Library of Congress recommended storage format.
 
 What you can now recognize:
-- Every "zero-configuration" claim in the docs is the ship talking.
+- When the docs say "zero-configuration" and "serverless", you can connect those to the stated shipboard constraint. Whether every such claim traces there is not established.
 
 Unresolved branches:
 - Which earlier embedded databases (Berkeley DB, gdbm) Hipp looked at; nothing found in the sources above.
