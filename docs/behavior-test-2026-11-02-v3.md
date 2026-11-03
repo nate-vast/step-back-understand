@@ -51,3 +51,21 @@ Roughly 35 to 45 percent more tokens, 30 to 100 percent more tool calls, and abo
 ## Verdict
 
 The revised step does what it was written to do, on this sample: the agent learns the influences and the reader comes out able to recognize specific things in the original. Keep the evidence discipline, the inspection limits, and the "what you can now recognize" requirement. Open items: the connections table still has a strong pull; the cost is real and should be stated in the README.
+
+## Blind grading (added later the same day)
+
+The verdict above was one reader who also wrote the revision. To get a number, nine fresh agents each graded one subject's pair without knowing which answer used the skill: answers were copied to neutral filenames as A and B, order randomised per pair, and the words "skill" and "step-back" removed. Each grader scored both answers 0 to 10 on the five criteria and named a preference. Rubric, key and raw scores are in [`blind-grading/`](./behavior-test-2026-11-02-v3/blind-grading/). Three graders per pair, nine in all.
+
+| Criterion | With skill | Without | Change |
+| --- | --- | --- | --- |
+| Teaches the sources | 8.7 | 6.6 | +32% |
+| Reveals the subject | 8.4 | 7.6 | +12% |
+| Distinctiveness | 8.1 | 6.4 | +26% |
+| Support for claims | 9.2 | 6.7 | +38% |
+| Readability | 5.9 | 9.0 | -35% |
+| All five | 8.1 | 7.2 | +11% |
+| First four (what the skill is for) | 8.6 | 6.8 | +27% |
+
+Per subject, all five criteria: uv +26% (3 of 3 graders preferred the skill answer), Khruangbin +8% (3 of 3), TDD +2% (2 of 3). Overall preference: 8 of 9 for the skill answer. The one dissent, on TDD, said the plain answer taught the same sources "at least as vividly inside a narrative a reader would actually finish".
+
+Reading: the skill buys about a quarter more on understanding and evidence, and costs about a third on readability. The readability loss is the next thing to fix; the explanation-first wording did not stop any skill run from producing a long connections table. Graders are the same model family as the writers, and nine grades over three pairs is a small sample.
