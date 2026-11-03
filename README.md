@@ -59,7 +59,7 @@ This skill stands alone; the recovery skill is not a dependency.
 
 ## Status
 
-v2 procedure. Behavior-tested once, on the previous revision, with three subjects run with and without the skill: see [docs/behavior-test-2026-11-02.md](./docs/behavior-test-2026-11-02.md). The current revision's "learn each source as a subject in its own right" step is untested. Publishing or cloning this repository does not activate it in an agent runtime.
+v2 procedure. Behavior-tested twice on 2026-11-02 with three subjects (a musician, a product, an idea), each run with and without the skill: [first test](./docs/behavior-test-2026-11-02.md) on the earlier revision, [second test](./docs/behavior-test-2026-11-02-v3.md) on the current "learn each source in its own right" procedure. In the second test all three skill runs studied the sources from their own material and went a layer further back where it helped. Cost: roughly a third to a half more tokens and time than answering without the skill, almost all of it fetching source material. One run per cell, one reader; initial evidence, not a guarantee. Publishing or cloning this repository does not activate it in an agent runtime.
 
 ## License
 
