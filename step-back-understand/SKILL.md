@@ -1,6 +1,6 @@
 ---
 name: step-back-understand
-description: "Understand a person, work, idea, product, system or anything else by learning the things that shaped it: find its influences, foundations and ingredients, study each of those as a subject in its own right, then see the original through them. Use when invoked by name, or when asked what shaped something, what its influences are, where it came from, or to understand it more deeply."
+description: "Understand a person, work, idea, product, system or anything else by learning the things that shaped it: find its influences, foundations and ingredients, study each of those as a subject in its own right, then see the original through them. Use when invoked by name or when the user explicitly asks to understand a subject through what shaped it."
 ---
 
 # Step Back Understand
@@ -67,19 +67,23 @@ This step is the heart of the skill. A name on a list teaches nothing.
 
 ## Report
 
+Lead with a coherent explanation that teaches the shaping sources and shows what they reveal about the subject. Integrate evidence and uncertainty where they matter, in the sentence that makes the claim. Use a table or the template below only when it makes the explanation clearer; do not fill out a form.
+
 Whatever the form, the report must cover:
 
 - the subject and the open question;
 - what you inspected directly, and what you could not;
-- a short profile of each shaping source studied;
+- what each shaping source studied is like in its own right;
 - the concrete connections, each with the trait carried forward, how it was transformed, its evidence class, and a source;
 - what those connections reveal about the subject;
-- what remains distinctive about the subject;
+- what remains distinctive about the subject, or that this pass could not establish it;
 - what the user can now recognize that they could not before;
 - unresolved branches and consequential uncertainty;
 - what changes for the current task, if there is one.
 
-Choose the form that explains the subject best: a short narrative, a table, a diagram, or the template below. The template is a default, not a requirement.
+Apply the same evidence standard to the concluding prose as to the connections. A summary sentence may not claim more than the evidence above it showed. If a conclusion is interpretation, say so and give its basis; labelling a claim interpretive does not supply the basis.
+
+Template, for when a structured form helps:
 
 ```md
 STEP-BACK UNDERSTANDING
@@ -90,7 +94,7 @@ Subject and question:
 Inspected directly:
 - ...
 
-Sources studied (profile each in two or three lines):
+Sources studied (what each is like in its own right):
 - ...
 
 Connections:
@@ -127,47 +131,29 @@ A useful result leaves the user able to recognize something in the subject they 
 
 Use this skill for understanding, including when nothing has failed. Use `step-back-evaluate` (Step Back Protocol) for stalled work and repeated failed approaches. If that recovery exposes a missing understanding of the subject's foundations, run this skill, then return the findings to the recovery decision.
 
-## Example 1: a musician (abbreviated)
+## Example 1: a musician (abbreviated, in prose)
 
-Sources checked 2026-11-02. Each row's source was read and supports the wording of that row. No audio was inspected.
+Sources checked 2026-11-02. No audio was inspected; every claim about how someone plays comes from a named written source, and the final section says what the reader can now check for themselves.
 
-```md
-STEP-BACK UNDERSTANDING
+**Subject and question.** John Mayer's lead guitar playing: where do the wide blues bends come from, and what would a listener now be able to hear in them?
 
-Subject and question:
-- John Mayer's guitar playing: where do the blues bends and the chord-melody rhythm style come from, and what is his own?
+**Inspected directly.** Mayer's own statements in interviews, his Rolling Stone writing (via a fan archive, the original is paywalled) and his 2013 Rock and Roll Hall of Fame induction of Albert King. Not inspected: any recording.
 
-Inspected directly:
-- Mayer's own statements in interviews and his Rolling Stone writing. Not inspected: recordings (audio); described through accounts and analyses only.
+**The source learned: Albert King.** King was left-handed and played a right-handed Gibson Flying V flipped over, so the strings ran upside down, high strings nearest the ceiling. He detuned the guitar; Premier Guitar gives C–F–C–F–A–D, Guitar World's account is C# standard, and the exact tuning is disputed. Because the high strings sat on top, he bent by pulling them down toward the floor, which gave him leverage for compound bends wider than a whole step. He plucked with his thumb rather than a pick. Over the V chord he would move the standard blues box up two frets rather than change scale. One signature move is a ghost bend that catches the second and third strings together before striking. All of that is from Jeff Jacobson's lesson in Premier Guitar (2024-01-20); the stringing and pull-down bends are also described in other lessons, the tuning is where sources disagree. Mayer's own description of King at the 2013 induction is a description of exactly this: King is "the reason guitar players break high E strings" (rockhall.com inductee page). Evidence class for the profile: documented analysis by a guitarist-author, not inspection.
 
-Sources studied:
-- Stevie Ray Vaughan: Texas blues guitarist, Stratocaster, heavy strings, high volume; Albert King's style "at the very heart of his playing" (Alan Paul, Texas Flood).
-- Albert King: left-handed, upside-down guitar, known above all for wide string bends. Mayer at the 2013 Rock Hall induction: "he is the reason guitar players break high E strings."
-- Jimi Hendrix: Mayer's entry point was "Little Wing", which he reached through Vaughan's version.
+**King to Stevie Ray Vaughan.** Alan Paul's book Texas Flood calls King "the number one influence on Stevie Ray Vaughan" and says King's style "was at the very heart of his playing"; Jimmie Vaughan recalls his brother playing "really good Albert King licks" (excerpt on alanpaul.substack.com, 2021-04-25). Jacobson's lesson names a specific trait that crossed over: the two-string ghost bend was "an Albert favorite that SRV later adopted". Evidence: documented.
 
-Connections:
-| Shaping source | Trait carried forward, and how it changed | Evidence | Source |
-| --- | --- | --- | --- |
-| Stevie Ray Vaughan | the first thing that was "not just strumming chords", heard at 13 on a neighbour's mixtape; Mayer calls him "my reference" on stage | documented | Far Out Magazine (original interview not named); KTCZ-FM interview 2002-04-16 via johnmayer.info |
-| Jimi Hendrix, via Vaughan | "I discovered Hendrix by way of Stevie Ray Vaughan"; first record was Axis: Bold as Love because it had "Little Wing" | documented | Rolling Stone, 100 Greatest Artists, 2010-12-03 (via johnmayer.info; the original page is paywalled) |
-| Albert King, via Vaughan | the wide bends Vaughan built his style on; Jimmie Vaughan: Stevie "played really good Albert King licks" | documented | Alan Paul, Texas Flood excerpt, alanpaul.substack.com, 2021-04-25 |
-| Albert King, directly | Mayer inducted King in 2013 and calls him "a household sound" | documented | rockhall.com/inductees/albert-king |
-| Hendrix's chord-melody rhythm playing in Mayer's own songs | a comparison many critics draw; no first-person statement found | interpretive | none that supports the exact claim |
+**Vaughan to Mayer.** Mayer says Vaughan was the first thing he heard that was "not just strumming chords", at 13, on a neighbour's mixtape with Vaughan on one side and Robert Cray on the other (Far Out Magazine, original interview not named), and that on stage Vaughan is "my reference" (KTCZ-FM, 2002-04-16, via johnmayer.info). Mayer "discovered Hendrix by way of Stevie Ray Vaughan" (Rolling Stone, 2010-12-03, via johnmayer.info). Evidence: documented. A Rock Hall interview is reported to have Mayer saying King's playing reached him twice, through Vaughan and then through King's own records; the page returned 404 today, so that line is unverified and not relied on.
 
-What this reveals about the subject:
-- Mayer's bends come down a two-step chain, Albert King to Vaughan to Mayer, and he knows it; the Hendrix side entered through the same door.
+**What this reveals.** The chain King to Vaughan to Mayer is documented at every link, and at the King to Vaughan link it is documented at the level of a specific technique. Mayer's own words about King describe King's bending, not his songs or tone, so the thing he names as King's contribution is the bends.
 
-What remains distinctive:
-- Putting that vocabulary inside pop songwriting rather than blues-rock, which none of the three sources did.
+**What remains distinctive.** Not established by this pass. The sources show what Mayer took; what is his own would need his recordings or transcriptions, which were not inspected.
 
-What you can now recognize:
-- Whose bends those are, and that a Mayer solo is usually Vaughan's vocabulary at a lower temperature.
+**What you can now recognize.** You know what an Albert King bend is: a pull that goes past a whole step, often on the top string, often two strings caught together, played over a box that moves up for the V chord. When you next hear a Mayer solo you can listen for those specific things instead of a general blues feel, and you can tell a King-style compound bend from a B.B. King-style single-finger bend, which Jacobson describes as the contrasting approach. Whether Mayer's bends in a given song are King's is for your ears to check; this pass did not listen.
 
-Unresolved branches:
-- B.B. King's specific contribution; Mayer played on King's 2005 album "80", but no checked source describes what he took from King's playing.
-```
+**Unresolved.** The Rock Hall "twice" quote. King's actual tuning. Anything about Mayer's chord-melody rhythm playing and Hendrix: critics compare them, no first-person statement was found, and the comparison stays an open question rather than a conclusion.
 
-## Example 2: a product (abbreviated)
+## Example 2: a product (abbreviated, in the template)
 
 Sources checked 2026-11-02.
 

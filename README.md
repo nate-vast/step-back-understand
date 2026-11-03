@@ -35,7 +35,7 @@ Other runtimes differ; check where they discover `SKILL.md` files.
 
 ## Invoke
 
-In Claude Code, `/step-back-understand` works once installed. The skill also triggers on asks like "what shaped X", "what are X's influences" or "where did X come from". In any runtime:
+The skill runs when invoked by name, or when you explicitly ask to understand a subject through what shaped it. In Claude Code, `/step-back-understand` works once installed. In any runtime:
 
 ```text
 Use step-back-understand to explore what shaped [subject].
@@ -48,7 +48,7 @@ Use step-back-understand on John Mayer's guitar playing. Where do the
 bends and the chord-melody rhythm style come from, and what is his own?
 ```
 
-The report covers the subject and question, what was inspected directly, a short profile of each source studied, the connections (shaping source, what carried forward, evidence class, source), what they reveal, what remains distinctive, what you can now recognize, unresolved branches, and what changes for the current task. A template block is provided, but a narrative or diagram is fine when it explains the subject better. Two abbreviated examples, a musician and a product, are at the end of [`SKILL.md`](./step-back-understand/SKILL.md).
+The result leads with an explanation that teaches the shaping sources and shows what they reveal about the subject, with evidence and uncertainty woven in where they matter. It covers the question, what was inspected, what each source is like in its own right, the connections with their evidence, what they reveal, what remains distinctive, what you can now recognize, and what is unresolved. A table or template is used only when it makes the explanation clearer. Two abbreviated examples, one in prose and one in the template, are at the end of [`SKILL.md`](./step-back-understand/SKILL.md).
 
 ## Which step back?
 
