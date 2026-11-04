@@ -59,7 +59,14 @@ This skill stands alone; the recovery skill is not a dependency.
 
 ## Status
 
-v2 procedure. Behavior-tested twice on 2026-11-02 with three subjects (a musician, a product, an idea), each run with and without the skill: [first test](./docs/behavior-test-2026-11-02.md) on the earlier revision, [second test](./docs/behavior-test-2026-11-02-v3.md) on the current "learn each source in its own right" procedure. In the second test all three skill runs studied the sources from their own material and went a layer further back where it helped. Nine model graders, three per pair, blind to which answer used the skill, preferred the skill answer 8 times out of 9 on those three pairs; their subjective scores ran about a quarter higher on teaching the sources, revealing the subject, distinctiveness and support, and about a third lower on readability. That is a difference in model-grader scores on three answer pairs, not a measured improvement in human understanding. Cost: roughly a third to a half more tokens and time than answering without the skill, almost all of it fetching source material. One run per cell, one reader; initial evidence, not a guarantee. Publishing or cloning this repository does not activate it in an agent runtime.
+v3 procedure: the influences are the agent's research, and the answer explains the subject itself (how it works, why it is that way, its context). Best on subjects the agent does not already know well.
+
+Tested 2026-11-03 on three subjects past the model's training cutoff or niche (a database release, a pop album, a folk album), two runs per arm. An independent quiz writer, never told the skill exists, wrote eight questions per subject; each agent answered from what it had learned, with no tools, and a blind scorer marked the sheets. Arms: with the skill, plain, and plain told to "research thoroughly" (matched effort).
+
+- What the agent learned: skill 91/96, thorough plain 93/96, plain 72/96. The skill's gain over a plain request comes from more research, not from its method.
+- What the person reads: blind judges, asked which answer they would rather receive, ranked the two skill answers first and second in all three subjects, ahead of the thorough-plain answers, at about half the length.
+
+An earlier revision that made the influences the answer lost to a plain answer on six well-known subjects ([fair test](./docs/behavior-test-2026-11-03-fair.md)); this revision is the fix ([v5 test](./docs/behavior-test-2026-11-03-v5.md)). All graders are models of the same family as the writers; small samples; initial evidence, not a guarantee. Cost: roughly twice the research of a plain answer. Publishing or cloning this repository does not activate it in an agent runtime.
 
 ## License
 
