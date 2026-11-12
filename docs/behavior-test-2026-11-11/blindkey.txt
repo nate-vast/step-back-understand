@@ -1,0 +1,14 @@
+mcdoom answer-A mcdoom-thorough.md
+mcdoom answer-B mcdoom-skill.md
+mcdoom answer-C mcdoom-twoline.md
+mcdoom sheet-A mcdoom-twoline.md
+mcdoom sheet-B mcdoom-skill.md
+mcdoom sheet-C mcdoom-thorough.md
+rust answer-A rust-skill.md
+rust answer-B rust-plain.md
+pi answer-A pi-thorough.md
+pi answer-B pi-skill.md
+pi answer-C pi-twoline.md
+pi sheet-A pi-thorough.md
+pi sheet-B pi-skill.md
+pi sheet-C pi-twoline.md

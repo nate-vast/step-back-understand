@@ -1,0 +1,6 @@
+pi answer-A pi-twoline.md
+pi answer-B pi-skill.md
+mcdoom answer-A mcdoom-twoline.md
+mcdoom answer-B mcdoom-skill.md
+rust answer-A rust-twoline.md
+rust answer-B rust-skill.md
